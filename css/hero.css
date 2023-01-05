@@ -1,0 +1,29 @@
+.hero{
+  display: grid;
+  block-size: 100vh;
+  background: sandybrown;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.hero-content{
+    grid-column: 1 / 7 ;
+    background: red;
+    block-size: inherit;
+    grid-row: 1 / -1;
+}
+
+.hero-img{
+   grid-column: 8 / -1;
+   background:  yellow;
+   block-size: inherit;
+   grid-row: 1 / -1;
+}
+
+.hero-testimonios{
+    grid-column: 7 / 11;
+    background: orange;
+    block-size: 246px;
+    grid-row: 7 / 11;
+
+}

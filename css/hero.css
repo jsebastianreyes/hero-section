@@ -1,29 +1,130 @@
+
 .hero{
   display: grid;
   block-size: 100vh;
-  background: sandybrown;
+  /* background: sandybrown; */
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
 .hero-content{
     grid-column: 1 / 7 ;
-    background: red;
     block-size: inherit;
     grid-row: 1 / -1;
+    padding-block-start: 4rem;
+    padding-block-end: 3rem;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.hero-contentTop{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hero-contentBottom{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .hero-img{
    grid-column: 8 / -1;
-   background:  yellow;
    block-size: inherit;
    grid-row: 1 / -1;
+   box-sizing: border-box;
+   padding-block: 4rem;
+   position: relative;
+}
+
+.hero-imgContenido{
+  position: relative;
+  block-size: 100%;
+
+
+}
+
+.hero-imgContenido::before{
+  content: "";
+  block-size: 99px;
+  inline-size: 94px;
+  background-image: url(../images/figure.svg);
+  background-size: contain;
+  position: absolute;
+  inset-block-start: 3rem;
+  inset-inline-start: -47px;
+  /* inset-block-end: 49px; */
+  z-index: 2;
+  
+}
+
+.hero-imgContenido::after{
+  content: "";
+  block-size: 98px;
+  inline-size: 98px;
+  background: var(--green);
+  position: absolute;
+  inset-block-end: -1rem;
+  inset-inline-end: -1rem;
+  z-index: -1;
+ 
 }
 
 .hero-testimonios{
+    aspect-ratio: 16/9;
     grid-column: 7 / 11;
-    background: orange;
-    block-size: 246px;
     grid-row: 7 / 11;
+    position: relative;
+    z-index: 2;
+    background: rgb(233 241 238 / 80%);
 
+}
+
+.hero-contentTitle{
+  margin: 0;
+  font: var(--h1);
+  color: var(--grey-dark);
+}
+
+.hero-contentSubtitle{
+  margin: 0;
+  font: var(--body1-regular);
+  color: var(--neutral);
+}
+.hero-contentSponsor{
+ font: var(--body1-bold);
+ color: var(--grey-dark);
+ margin: 0;
+ padding: 0;
+}
+
+.hero-contentWeb{
+  font: var(--h2);
+  color: var(--grey-ligth);
+  margin: 0;
+  padding: 0;
+
+}
+
+.imgHero{
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 1;
+
+}
+
+@media screen and (min-width: 1910px) {
+  .hero{
+    block-size: 51rem;
+  }
+   
 }

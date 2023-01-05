@@ -1,5 +1,7 @@
 @import url(./icons.css);
 @import url(./hero.css);
+@import url(./button.css);
+
 
 :root{
     --bg: #242629; 
@@ -10,7 +12,7 @@
     --green: #196046; 
     --yellow: #ffe084; 
     --green-ligth: #469175; 
-    --h1: 400 5rem/normal Inter; 
+    --h1: 400 4rem/normal Inter; 
     --h2: 700 2.5rem/normal Inter; 
     --h3: semi bold 1.375rem/2.5rem Inter; 
     --body1-regular: 400 1.125rem/1.75rem Inter; 
@@ -21,4 +23,21 @@
 body{
     margin: 0;
     padding: 0;
+    font: var(--body1-regular);
+}
+
+.wrapper{
+    max-inline-size: 77rem;
+    margin: auto;
+    padding-inline: 1rem;
+}
+
+@media screen and (min-width: 1910px) {
+    .wrapper{
+        max-inline-size: 101rem;
+    }
+
+    :root{
+        --h1: 400 5rem/normal Inter; 
+    }
 }

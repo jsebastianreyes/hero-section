@@ -1,0 +1,25 @@
+.button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    background: var(--green);
+    color: var(--white);
+    width: fit-content;
+}
+
+.button.is-square{
+  padding: 1.31rem;
+}
+
+.button.is-large{
+    padding: 1rem 1.5rem;
+}
+
+
+
+.button i{
+    color: var(--yellow);
+    font-size: .9rem;
+}

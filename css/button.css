@@ -3,11 +3,20 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 1rem 1.5rem;
+    
     background: var(--green);
     color: var(--white);
     width: fit-content;
 }
+
+.button.is-square{
+  padding: 1.31rem;
+}
+
+.button.is-large{
+    padding: 1rem 1.5rem;
+}
+
 
 
 .button i{

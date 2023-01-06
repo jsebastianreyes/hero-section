@@ -80,9 +80,7 @@
     aspect-ratio: 16/9;
     grid-column: 7 / 11;
     grid-row: 7 / 11;
-    position: relative;
-    z-index: 2;
-    background: rgb(233 241 238 / 80%);
+    
 
 }
 
@@ -125,6 +123,7 @@
 @media screen and (min-width: 1910px) {
   .hero{
     block-size: 51rem;
+    margin-block-start: 3rem;
   }
    
 }

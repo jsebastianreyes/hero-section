@@ -1,12 +1,38 @@
 .testimonios{
-    position: relative;
+    /* position: relative;
     z-index: 2;
     background: rgb(233 241 238 / 80%);
     padding-inline: 1.5rem;
     padding-block-start: 1.5rem;
     padding-block-end: 1.5rem;
-    /* padding: ; */
+    box-sizing: border-box; */
+}
+
+.slides{
+    overflow: hidden;
+    max-block-size: 228px;
+    display: flex;
+}
+
+
+/* .testimonios-contenido[hidden="true"]{
+    display: none I !important;
+} */
+
+.testomonios-contenido{
+    animation-fill-mode: forwards;
+    width: 100%;
+    transition: 3s translate;
+    flex-shrink: 0;
+    background: rgb(233 241 238 / 80%);
+    padding-inline: 1.5rem;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
     box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+    "image info . rating"
+    "txt txt txt txt";
 }
 
 .testimonio-botones{
@@ -17,12 +43,7 @@
     block-size: 60px;
 }
 
-.testomonios-contenido{
-    display: grid;
-    grid-template-areas: 
-    "image info . rating"
-    "txt txt txt txt";
-}
+
 
 .testimonios-contenido p {
   padding: 0;

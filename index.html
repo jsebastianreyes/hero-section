@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&family=DM+Sans:wght@500" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <section id="app" class="app">
@@ -31,18 +32,38 @@
                     </div>
                 </div>
                 <div class="hero-testimonios testimonios">
-                    <div class="testomonios-contenido">
-                        <img src="./images/testimonio-1.jpg" alt="" class="testimonioImg">
-                        <p class="testimonio-nombreycargo">
-                            <span class="testimonioNombre">Robert Fox</span>
-                            <span class="testimonioCargo">Freelancer</span>
-                        </p>
-                        <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
-                        <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                    <div class="slides">
+                        <div class="testomonios-contenido" id="slide-1">
+                            <img src="./images/testimonio-3.jpg" alt="" class="testimonioImg">
+                            <p class="testimonio-nombreycargo">
+                                <span class="testimonioNombre">Floyd Miles</span>
+                                <span class="testimonioCargo">Freelancer</span>
+                            </p>
+                            <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
+                            <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                        </div>
+                        <div class="testomonios-contenido"  id="slide-2">
+                            <img src="./images/testimonio-2.jpg" alt="" class="testimonioImg">
+                            <p class="testimonio-nombreycargo">
+                                <span class="testimonioNombre">Robert Fox</span>
+                                <span class="testimonioCargo">Freelancer</span>
+                            </p>
+                            <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
+                            <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                        </div>
+                        <div class="testomonios-contenido"  id="slide-3">
+                            <img src="./images/testimonio-1.jpg" alt="" class="testimonioImg">
+                            <p class="testimonio-nombreycargo">
+                                <span class="testimonioNombre">Courtney H.</span>
+                                <span class="testimonioCargo">Freelancer</span>
+                            </p>
+                            <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
+                            <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                        </div>
                     </div>
                     <div class="testimonio-botones">
-                        <a href="#" class="button is-square"><i class="icon-arrow-left"></i></a>
-                        <a href="#" class="button is-square"><i class="icon-arrow-right"></i></a>
+                        <a href="#" class="button is-square" id="prev"><i class="icon-arrow-left"></i></a>
+                        <a href="#" class="button is-square" id="next"><i class="icon-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

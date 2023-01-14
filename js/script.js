@@ -26,6 +26,7 @@ function animationTime(time){
 
 // console.log($slides.length)
 function handleNextSlide(e){
+  e.preventDefault()
   count++
   console.log(count)
     count <= 0 ?  $btnPrev.classList.add('blocked') :  $btnPrev.classList.remove('blocked')
@@ -43,6 +44,7 @@ function handleNextSlide(e){
 }
 
 function handlePrevSlide(e){
+  e.preventDefault()
     count--
     console.log(count)
     count <= 0 ?  $btnPrev.classList.add('blocked') :  $btnPrev.classList.remove('blocked')

@@ -19,7 +19,7 @@
                     <div class="hero-contentTop">
                         <h1 class="hero-contentTitle">El sitio que desea, sin el tiempo de desarrollo</h1>
                         <p class="hero-contentSubtitle">Su sitio web debe ser un activo de marketing, no un desafío de ingeniería.</p>
-                        <a href="#" class="button is-large"> <span>Iniciar ahora </span> <i class="icon-arrow-right"></i></a>
+                        <a href="#" id="activeAnimation" class="button is-large"> <span>Iniciar ahora </span> <i class="icon-arrow-right"></i></a>
                     </div>
                     <div class="hero-contentBottom">
                         <p class="hero-contentSponsor">Patrocinador oficial</p>
@@ -28,10 +28,12 @@
                 </div>
                 <div class="hero-img">
                     <div class="hero-imgContenido">
-                        <img class="imgHero" src="./images/image-hero.jpg" alt="">
+                        <div class="figure animate__animated"></div>
+                        <img class="imgHero animate__animated" src="./images/image-hero.jpg" alt="">
+                        <div class="square animate__animated"></div>
                     </div>
                 </div>
-                <div class="hero-testimonios testimonios">
+                <div class="hero-testimonios testimonios animate__animated">
                     <div class="slides">
                         <div class="testomonios-contenido" id="slide-1">
                             <img src="./images/testimonio-3.jpg" alt="" class="testimonioImg">
@@ -60,6 +62,15 @@
                             <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
                             <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
                         </div>
+                        <div class="testomonios-contenido" id="slide-4">
+                            <img src="./images/testimonio-3.jpg" alt="" class="testimonioImg">
+                            <p class="testimonio-nombreycargo">
+                                <span class="testimonioNombre">Floyd</span>
+                                <span class="testimonioCargo">Freelancer</span>
+                            </p>
+                            <p class="testimonioRating"> <i class="icon-icon-star"></i> 4.8 </p>
+                            <p class="testimonioTexto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                        </div>
                     </div>
                     <div class="testimonio-botones">
                         <a href="#" class="button is-square" id="prev"><i class="icon-arrow-left"></i></a>
@@ -70,6 +81,6 @@
         </div>
     </section>
   
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

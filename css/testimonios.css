@@ -1,23 +1,8 @@
-.testimonios{
-    /* position: relative;
-    z-index: 2;
-    background: rgb(233 241 238 / 80%);
-    padding-inline: 1.5rem;
-    padding-block-start: 1.5rem;
-    padding-block-end: 1.5rem;
-    box-sizing: border-box; */
-}
 
 .slides{
     overflow: hidden;
-    max-block-size: 228px;
     display: flex;
 }
-
-
-/* .testimonios-contenido[hidden="true"]{
-    display: none I !important;
-} */
 
 .testomonios-contenido{
     animation-fill-mode: forwards;
@@ -33,6 +18,10 @@
     grid-template-areas: 
     "image info . rating"
     "txt txt txt txt";
+}
+
+.button.is-square:active{
+  transform: scale(.9);
 }
 
 .testimonio-botones{

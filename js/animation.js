@@ -9,7 +9,8 @@ const $button = document.querySelector('#activeAnimation')
 const $elementos = [$testimonios, $img, $square, $figure]
 $elementos.map($el => $el.style.visibility = 'hidden')
 
-function activeAnimation(){
+function activeAnimation(e){
+    e.preventDefault()
     $img.classList.add('animate__slideInDown', 'animate__slow')
     $figure.classList.add('animate__slideInDown', 'animate__slow')
     $square.classList.add('animate__slideInUp' , 'animate__slow')

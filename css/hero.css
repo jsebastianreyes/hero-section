@@ -50,7 +50,7 @@
 
 }
 
-.hero-imgContenido::before{
+.figure{
   content: "";
   block-size: 99px;
   inline-size: 94px;
@@ -64,7 +64,7 @@
   
 }
 
-.hero-imgContenido::after{
+.square{
   content: "";
   block-size: 98px;
   inline-size: 98px;
@@ -82,9 +82,16 @@
     grid-row: 7 / 11;
     position: relative;
     z-index: 1;
-    /* overflow: hidden; */
-    
+    max-block-size: 228px;
 
+  
+}
+
+.button.blocked{
+
+  background: var(--green-ligth) !important;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .hero-contentTitle{
